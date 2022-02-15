@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Órarend</title>
+    <style>
+        tr, td, th {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 202px;
+        }
+        tr [id="id"] {
+            width: 24px;
+        }
+    </style>
+</head>
+<body>
+    <p>2022. 02. 14-18.</p>
+    <table>
+        <tr>
+            <th colspan=6><i>Órarend</i></th>
+        </tr>
+        <tr>
+            <th id="id">Óra</th>
+            <th>Hétfő</th>
+            <th>Kedd</th>
+            <th>Szerda</th>
+            <th>Csütörtök</th>
+            <th>Péntek</th>
+        </tr>
+            <th id="id">0.</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><div class="foo" style="color: black">Testnevelés és sport</div></td>
+            <td></td>
+        <tr>
+            <th id="id">1.</th>
+            <td><div class="foo" style="color: black">Informatikai és távközlés</div></td>
+            <td><div class="foo" style="color: black">Matematika</div></td>
+            <td><div class="foo" style="color: black">Történelem</div></td>
+            <td rowspan="2"><div class="foo" style="color: black">Angol</div></td>
+            <td><div class="foo" style="color: black">Digitális kultúra</div></td>
+        </tr>
+        <tr>
+            <th id="id">2.</th>
+            <td><div class="foo" style="color: black">Komplex természettudomány</div></td>
+            <td><div class="foo" style="color: black">Magyar nyelv és irodalom</div></td>
+            <td><div class="foo" style="color: black">Digitális kultúra</div></td>
+            <td><div class="foo" style="color: black">Angol</div></td>
+        </tr>
+        <tr>
+            <th id="id">3.</th>
+            <td><div class="foo" style="color: black">Történelem</div></td>
+            <td><div class="foo" style="color: black">IKT projektmunka I.</div></td>
+            <td><div class="foo" style="color: black">Osztályfőnöki</div></td>
+            <td><div class="foo" style="color: green">Magyar nyelv és irodalom</div></td>
+            <td><div class="foo" style="color: black">Programozási alapok</div></td>
+        </tr>
+        <tr>
+            <th id="id">4.</th>
+            <td><div class="foo" style="color: black">Magyar nyelv és irodalom</div></td>
+            <td><div class="foo" style="color: black">Testnevelés és sport</div></td>
+            <td><div class="foo" style="color: black">Informatikai és távközlés</div></td>
+            <td><div class="foo" style="color: black">Munkavállalói ismeretek</div></td>
+            <td><div class="foo" style="color: black">Matematika</div></td>
+        </tr>
+        <tr>
+            <th id="id">5.</th>
+            <td><div class="foo" style="color: black">Matematika</div></td>
+            <td><div class="foo" style="color: black">Angol</div></td>
+            <td><div class="foo" style="color: black">Magyar nyelv és irodalom</div></td>
+            <td><div class="foo" style="color: black">Testnevelés és sport/Fejlesztés</div></td>
+            <td><div class="foo" style="color: black">Komplex természettudomány</div></td>
+        </tr>
+        <tr>
+            <th id="id">6.</th>
+            <td><div class="foo" style="color: black">Programozási alapok</div></td>
+            <td><div class="foo" style="color: black">Komplex természettudomány</div></td>
+            <td><div class="foo" style="color: black">Matematika</div></td>
+            <td><div class="foo" style="color: black">Történelem</div></td>
+            <td><div class="foo" style="color: black">Magyar nyelv és irodalom</div></td>
+        </tr>
+        <tr>
+            <th id="id">7.</th>
+            <td rowspan="2"><div class="foo" style="color: black">Testnevelés és sport</div></td>
+            <td></td>
+            <td><div class="foo" style="color: black">Testnevelés és sport</div></td>
+            <td><div class="foo" style="color: black">Digitális kultúra</div></td>
+            <td><div class="foo" style="color: black">Informatikai és távközlés</div></td>
+        </tr>
+        <tr>
+            <th id="id">8.</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+<footer>
+    <p>Jelmagyarázat:</p>
+    <div class="foo" style="color: red"><b>Vastag piros = Elmaradt tanóra</b></div>
+    <div class="foo" style="color: green">Vékony zöld = Írásbeli dolgozat</div>
+    <div class="foo" style="color: green"><b>Vastag zöld = Írásbeli témazáró</b></div>
+    <div class="foo" style="color: blue"><b>Vastag kék = Helyettesítés</b></div>
+    <div class="foo" style="color: orange">Narancs = Óraáthelyezés</div>
+</footer>
+</html>

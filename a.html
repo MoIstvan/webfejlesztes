@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            color: black;
+        
+        }
+        p {
+            color: rgb(255, 255, 255);
+        }
+        textarea, button {
+            background-color: rgb(54, 54, 54);
+            column-count: 75;
+            -webkit-text-fill-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <textarea name="1" id="1" cols="75" rows="20"></textarea><br>
+    <p>Channel Selection: <select name="name" id="2" title="channel select">
+        <option value="1">piano</option>
+        <option value="2">bass</option>
+        <option value="3">bass2</option>
+        <option value="4">drum</option>
+        <option value="5">Ch.5</option>
+        <option value="6">Ch.6</option>
+        <option value="7">Ch.7</option>
+        <option value="8">Ch.8</option>
+        <option value="9">Ch.9</option>
+        <option value="10">Ch.10</option>
+        <option value="11">Ch.11</option>
+        <option value="12">Ch.12</option>
+        <option value="13">Ch.13</option>
+        <option value="14">Ch.14</option>
+        <option value="15">Ch.15</option>
+        <option value="16">Ch.16</option>
+    </select>
+    Track Count: (cammot be more than 31) <textarea name="Track Count" id="3" cols="2" rows="1">2</textarea>
+    </p>
+    <p><button title="h" value="1">Launch!</button></p>
+    <textarea name="Output table" id="4" cols="255" rows="32" disabled="disabled"></textarea>
+</body>
+</html>
