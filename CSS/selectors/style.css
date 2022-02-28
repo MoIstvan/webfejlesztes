@@ -15,6 +15,37 @@
 div {
     border: 1px solid black;
 }
-p:first-of-type {
-    color: green;
+body>p:first-of-type {
+    color: rgb(10, 172, 10);
+}
+/*Közvetlen gyerek:
+body>p {
+    background-color: blue;
+}
+*/
+li.red+li {
+    background-color: gold;
+}
+li.red~li {
+    border-left: 5px solid gray;
+    border-right: 5px solid grey;
+}
+p:first-child {
+    font-size: 24px;
+}
+ol li:nth-child(4) {
+    font-family: 'Courier New', Courier, monospace;
+}
+tr:nth-child(2n+1) td {
+    background-color: green;
+}
+/*2n+1 -> 2 = osztó; n = szám; +1 = maradék*/
+td:nth-child(2n+1) {
+    background-color: rgb(8, 172, 8);
+}
+[title] {
+    font-style: italic;
+}
+[title = masodik] {
+    color: rgb(20, 107, 20);
 }
