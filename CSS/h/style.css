@@ -1,0 +1,42 @@
+* {
+    background-color: turquoise;
+}
+#p1 {
+    text-align: left;
+}
+#p2 {
+    text-align: center;
+}
+#p3 {
+    text-align: right;
+}
+#p4 {
+    text-align: justify;
+}
+#p5 {
+    text-decoration: overline underline line-through;
+    text-decoration-color: blue;
+    text-decoration-thickness: 3px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-style: dashed;
+}
+/* Behúzás */
+#p6 {
+    text-indent: 1%;
+}
+#p7 {
+    /*             szín/fel/le/mosás;*/
+    text-shadow: blue 4px 7px 8px;
+}
+#p8 {
+    text-shadow: blue 0px 0px 2px;
+}
+#p9 {
+    text-transform: uppercase;
+}

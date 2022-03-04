@@ -30,7 +30,7 @@
     font-size: 30px;
 }
 body {
-    font-size: 10px;
+    font-size: 16px;
 }
 #p11 {
     font-size: 200%
@@ -49,5 +49,19 @@ body {
     font-size: 6vw;
 }
 #p15 {
-    letter-spacing: 8px;
+    letter-spacing: 6px;
+}
+#p16 {
+    color: blue;
+    letter-spacing: -0.5px;
+}
+/* shorthand, rövidítés */
+#p17 {
+    /* font-weight: bold;
+    font-variant: small-caps;
+    font-family: fantasy; */
+    font: bold small-caps 20px fantasy;
+}
+#p18 {
+    word-spacing: -70px;
 }
