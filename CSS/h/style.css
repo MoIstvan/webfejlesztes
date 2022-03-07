@@ -24,7 +24,6 @@ a {
 a:hover {
     text-decoration: underline;
     font-weight: bold;
-    text-decoration-style: dashed;
 }
 /* Behúzás */
 #p6 {
@@ -39,4 +38,32 @@ a:hover {
 }
 #p9 {
     text-transform: uppercase;
+}
+#p10 {
+    text-transform: lowercase;
+}
+#p11 {
+    text-transform: capitalize;
+}
+#p12 {  
+    text-align: justify;
+    line-height: 3em;
+}
+#p13 {
+    white-space: pre-line;
+}
+#p15 {
+    background-color: rgba(196, 0, 0, 0.33)
+}
+#p16 {
+    background-color: rgba(110, 13, 110, 0.445)
+}
+#p17 {
+    background-color: rgba(150, 52, 126, 0.69);
+}
+#p18 {
+    background-color: rgb(0, 128, 0);
+}
+#p19 {
+    background-color: #91a;
 }
