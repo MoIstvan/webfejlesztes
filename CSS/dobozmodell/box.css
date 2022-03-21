@@ -29,14 +29,53 @@ meter {
     margin: 10px
 }
 #div2 {
-    margin-top: 25px;
-    margin-right: 50px;
-    margin-bottom: 75px;
-    margin-left: 100px;
+    margin-top: 1px;
+    margin-right: 2px;
+    margin-bottom: 3px;
+    margin-left: 4px;
 }
 #div3 {
-    margin: 25px 50px 75px 100px;
+    /*      top rgt btm lft */
+    margin: 1px 2px 3px 4px;
 }
 #div4 {
-    margin: 25px 50px 75px
+    width: 80%;
+}
+#div5 {
+    width: 700px;
+    margin: 10px calc(80%-400px)
+}
+#div6 {
+    --w: 400px;
+    width: var(--w);
+    margin: 10px calc((100% - var(--w))/2);
+}
+#div9~div {
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+}
+#div10 {
+    border-style: groove;
+    border-width: 5px;
+    border-color: blue;
+    border-radius: 100px;
+}
+#div11 {
+    border: 4px solid brown;
+}
+#div12 {
+    border-top: 1px dotted blue;
+    border-right: 2px solid red;
+    border-bottom: 5px dashed rgb(200, 200, 0);
+    border-left: none;
+}
+#div13 {
+    box-shadow: 10px 5px #191f;
+}
+#div14 {
+    border: 10px solid blue;
+}
+#div15 {
+    border: 10px solid purple;
 }
