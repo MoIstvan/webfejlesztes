@@ -4,15 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    #lifebar {
+  margin-top: 10px;
+  height: 5px;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#lifebar-inner {
+  background-color: rgba(45, 206, 171, 0.3);
+  height: 100%;
+  width: 100%;
+  max-width: 0%;
+}
+    </style>
     <title>box</title>
 </head>
 <body>
-    <progress id="meter" value="input#input" max="100" style="width: 100%; height: 50px;"></progress>
-    <input id="input" type="number" min="0" max="100" step="0.01" value="0" onchange="function myFunction(render)">
-    <script type="text/javascript">
-        function myFunction(render) {
-            console.output(HTMLInputElement.valueOf); (HTMLProgressElement.length)
-        }
+<div id="lifepog">
+    <input oninput="setProgress()" type="number" class="currentlife" max="2147483647" min="0" step="1" value="0">
+    <input oninput="setProgress()" type="number" class="totallife" max="2147483647" min="0" value="10000">
+    </div>
+    <div id="lifebar">
+    <div id="lifebar-inner">
+</div>
+<script type="text/javascript">
+    const progress = document.getElementById('lifebar-inner');
+    const numeratorInput = document.querySelector('.currentlife');
+    const denominatorInput = document.querySelector('.totallife');
+
+    /* Set the max-width by calculating what percentage 
+    the top input is of the bottom input */
+    const setProgress = () => {
+    progress.style.maxWidth = `
+        ${(numeratorInput.value / denominatorInput.value) * 100}%
+    `;
+    }
     </script>
 </body>
 </html>
