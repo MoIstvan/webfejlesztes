@@ -5,17 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+    * {
+        background-color: black;
+    }
+    input {
+        -webkit-text-fill-color: white;
+    }
     #lifebar {
-  margin-top: 10px;
-  height: 5px;
+  margin-top: 5px;
+  height: 8px;
   width: 100%;
   border: 1px solid grey;
-  border-radius: 10px;
-  overflow: hidden;
+  border-radius: 0px;
+  overflow: none;
 }
 
 #lifebar-inner {
-  background-color: rgba(45, 206, 171, 0.3);
+  background-color: rgba(0, 0, 255, 0.75);
   height: 100%;
   width: 100%;
   max-width: 0%;
@@ -25,8 +31,8 @@
 </head>
 <body>
 <div id="lifepog">
-    <input oninput="setProgress()" type="number" class="currentlife" max="2147483647" min="0" step="1" value="0">
-    <input oninput="setProgress()" type="number" class="totallife" max="2147483647" min="0" value="10000">
+    <input oninput="setProgress()" type="number" class="currentlife" max="100" min="0" step="0.1" value="0">
+    <input oninput="setProgress()" type="number" class="totallife" max="100" min="0" value="100" hidden>
     </div>
     <div id="lifebar">
     <div id="lifebar-inner">

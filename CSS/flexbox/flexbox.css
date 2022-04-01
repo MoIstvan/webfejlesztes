@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(0, 195, 195);
+}
+.flexbox {
+    background-color: rgb(0, 210, 210);
+    text-align: center;
+    height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flexbox>div {
+    outline: 1px solid rgb(0, 130, 150);
+    height: 42px;
+    width: 105px;
+    display: inline-block;
+    display: flex;
+}
