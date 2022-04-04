@@ -11,7 +11,7 @@ body {
 }
 .flexbox>div {
     outline: 1px solid rgb(0, 130, 150);
-    height: 42px;
+    height: 42.069px;
     width: 105px;
     display: inline-block;
     display: flex;
